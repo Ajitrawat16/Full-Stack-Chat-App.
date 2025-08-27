@@ -19,7 +19,7 @@ app.use(express.urlencoded({ limit: "10mb", extended: true })); // ✅ Increase 
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://full-stack-chat-app-wn6a.onrender.com"],
     credentials: true,
   })
 );
